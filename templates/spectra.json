@@ -1,67 +1,43 @@
 {
   "name": "spectra",
+  "id": "1404576556554256534",
   "icon": null,
+  "ownerId": "1369438491376877599",
+  "createdAt": "2025-08-11T21:25:46.853Z",
   "roles": [
-    {
-      "name": "Founder",
-      "color": "#ffffff",
-      "hoist": true,
-      "position": 1,
-      "permissions": "8",
-      "mentionable": false
-    },
     {
       "name": "Spectra",
       "color": "#000000",
       "hoist": true,
       "position": 2,
-      "permissions": "8",
-      "mentionable": false
+      "mentionable": false,
+      "permissions": {
+        "bitfield": "8",
+        "names": [
+          "Administrator"
+        ]
+      }
+    },
+    {
+      "name": "Founder",
+      "color": "#ffffff",
+      "hoist": true,
+      "position": 1,
+      "mentionable": false,
+      "permissions": {
+        "bitfield": "8",
+        "names": [
+          "Administrator"
+        ]
+      }
     }
   ],
   "channels": [
     {
-      "name": "gate",
-      "type": 0,
-      "parent": null,
-      "position": 0,
-      "topic": null,
-      "nsfw": false,
-      "bitrate": null,
-      "userLimit": null,
-      "rateLimitPerUser": 0,
-      "permissionOverwrites": [
-        {
-          "id": "1404576556554256534",
-          "type": 0,
-          "allow": "1025",
-          "deny": "2048"
-        }
-      ]
-    },
-    {
-      "name": "e",
-      "type": 0,
-      "parent": "unused",
-      "position": 0,
-      "topic": null,
-      "nsfw": false,
-      "bitrate": null,
-      "userLimit": null,
-      "rateLimitPerUser": 0,
-      "permissionOverwrites": [
-        {
-          "id": "1404576556554256534",
-          "type": 0,
-          "allow": "0",
-          "deny": "1024"
-        }
-      ]
-    },
-    {
       "name": "unused",
-      "type": 4,
-      "parent": null,
+      "id": "1404579036188901407",
+      "type": "GuildCategory",
+      "category": null,
       "position": 0,
       "topic": null,
       "nsfw": false,
@@ -71,9 +47,69 @@
       "permissionOverwrites": []
     },
     {
+      "name": "gate",
+      "id": "1404576557674004571",
+      "type": "GuildText",
+      "category": "No Category",
+      "position": 0,
+      "topic": null,
+      "nsfw": false,
+      "bitrate": null,
+      "userLimit": null,
+      "rateLimitPerUser": 0,
+      "permissionOverwrites": [
+        {
+          "id": "1404576556554256534",
+          "type": 0,
+          "allow": {
+            "bitfield": "1025",
+            "names": [
+              "CreateInstantInvite",
+              "ViewChannel"
+            ]
+          },
+          "deny": {
+            "bitfield": "2048",
+            "names": [
+              "SendMessages"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "e",
-      "type": 0,
-      "parent": "unused",
+      "id": "1404578810086555671",
+      "type": "GuildText",
+      "category": "unused",
+      "position": 0,
+      "topic": null,
+      "nsfw": false,
+      "bitrate": null,
+      "userLimit": null,
+      "rateLimitPerUser": 0,
+      "permissionOverwrites": [
+        {
+          "id": "1404576556554256534",
+          "type": 0,
+          "allow": {
+            "bitfield": "0",
+            "names": []
+          },
+          "deny": {
+            "bitfield": "1024",
+            "names": [
+              "ViewChannel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "e",
+      "id": "1404578810086555668",
+      "type": "GuildText",
+      "category": "unused",
       "position": 1,
       "topic": null,
       "nsfw": false,
@@ -84,15 +120,24 @@
         {
           "id": "1404576556554256534",
           "type": 0,
-          "allow": "0",
-          "deny": "1024"
+          "allow": {
+            "bitfield": "0",
+            "names": []
+          },
+          "deny": {
+            "bitfield": "1024",
+            "names": [
+              "ViewChannel"
+            ]
+          }
         }
       ]
     },
     {
       "name": "announcements",
-      "type": 5,
-      "parent": null,
+      "id": "1404578997802897561",
+      "type": "GuildNews",
+      "category": "No Category",
       "position": 1,
       "topic": null,
       "nsfw": false,
@@ -103,15 +148,26 @@
         {
           "id": "1404576556554256534",
           "type": 0,
-          "allow": "1024",
-          "deny": "2048"
+          "allow": {
+            "bitfield": "1024",
+            "names": [
+              "ViewChannel"
+            ]
+          },
+          "deny": {
+            "bitfield": "2048",
+            "names": [
+              "SendMessages"
+            ]
+          }
         }
       ]
     },
     {
       "name": "chat",
-      "type": 0,
-      "parent": null,
+      "id": "1404580248435163277",
+      "type": "GuildText",
+      "category": "No Category",
       "position": 2,
       "topic": null,
       "nsfw": false,
